@@ -1,0 +1,251 @@
+[
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.RangeController",
+    "instance": "Temperature",
+    "version": "3",
+    "properties": {
+      "supported": [
+        {
+          "name": "rangeValue"
+        }
+      ],
+      "proactivelyReported": false,
+      "retrievable": false,
+      "nonControllable": false
+    },
+    "capabilityResources": {
+      "friendlyNames": [
+        {
+          "@type": "asset",
+          "value": {
+            "assetId": "Alexa.Setting.Temperature"
+          }
+        },
+        {
+          "@type": "text",
+          "value": {
+            "text": "temperature",
+            "locale": "en-US"
+          }
+        }
+      ]
+    },
+    "configuration": {
+      "supportedRange": {
+        "minimumValue": 17,
+        "maximumValue": 33,
+        "precision": 1
+      },
+      "presets": [
+        {
+          "rangeValue": 17,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Low"
+                }
+              },
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Minimum"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "lowest",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "rangeValue": 25,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Medium"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "normal",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "rangeValue": 33,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Maximum"
+                }
+              },
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.High"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "highest",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.RangeController",
+    "instance": "Fan.Speed",
+    "version": "3",
+    "properties": {
+      "supported": [
+        {
+          "name": "rangeValue"
+        }
+      ],
+      "proactivelyReported": false,
+      "retrievable": false,
+      "nonControllable": false
+    },
+    "capabilityResources": {
+      "friendlyNames": [
+        {
+          "@type": "asset",
+          "value": {
+            "assetId": "Alexa.Setting.FanSpeed"
+          }
+        },
+        {
+          "@type": "text",
+          "value": {
+            "text": "Speed",
+            "locale": "en-US"
+          }
+        },
+        {
+          "@type": "text",
+          "value": {
+            "text": "Fan Speed",
+            "locale": "en-US"
+          }
+        }
+      ]
+    },
+    "configuration": {
+      "supportedRange": {
+        "minimumValue": 0,
+        "maximumValue": 7,
+        "precision": 1
+      },
+      "presets": [
+        {
+          "rangeValue": 0,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Low"
+                }
+              },
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Minimum"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "lowest",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "rangeValue": 3,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Medium"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "normal",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "rangeValue": 7,
+          "presetResources": {
+            "friendlyNames": [
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.Maximum"
+                }
+              },
+              {
+                "@type": "asset",
+                "value": {
+                  "assetId": "Alexa.Value.High"
+                }
+              },
+              {
+                "@type": "text",
+                "value": {
+                  "text": "highest",
+                  "locale": "en-US"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "type": "AlexaInterface",
+    "interface": "Alexa.PowerController",
+    "version": "3",
+    "properties": {
+      "supported": [
+        {
+          "name": "powerState"
+        }
+      ],
+      "proactivelyReported": false,
+      "retrievable": false
+    }
+  }
+]
